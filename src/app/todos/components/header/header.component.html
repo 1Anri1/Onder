@@ -1,0 +1,10 @@
+<header class="header">
+    <h1>BADCRABS&nbsp;ToDo</h1>
+    <input class="new-todo" 
+     placeholder="Co je třeba udělat?" 
+     autoFocus
+     [value]="text"
+     (keyup)="changeText($event)"
+     (keyup.enter)="addTodo()"
+    />
+</header>
